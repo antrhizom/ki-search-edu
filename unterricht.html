@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unterricht & Methoden – KI-Recherche</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container nav" aria-label="Hauptnavigation">
+      <a href="index.html" class="nav__brand">KI-Recherche</a>
+      <div class="nav__links">
+        <a href="recherche.html">Recherchestrategien</a>
+        <a href="unterricht.html" aria-current="page">Unterricht & Methoden</a>
+        <a href="ki-veraenderung.html">Veränderungen durch KI</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge" aria-label="Fokus">🏫 Unterrichtseinblicke</p>
+      <h1 class="hero__title">So haben wir KI im Unterricht bearbeitet</h1>
+      <p class="hero__subtitle">
+        Entdecke die Unterrichtsmethoden, Materialien und Kompetenzen, die in unserem KI-Projekt eine Rolle spielen.
+        Nutze das interaktive Accordion und teste dein Wissen im Mini-Quiz.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Unterrichtsmethoden & Materialien</h2>
+      <p class="section-text">
+        Jede Einheit verknüpft fachliche Inhalte mit Medienkompetenz und ethischen Fragestellungen. Öffne die Bereiche, um
+        konkrete Beispiele kennenzulernen.
+      </p>
+
+      <div class="timeline">
+        <article class="accordion-item" data-toggle data-open="false">
+          <button class="accordion-trigger" type="button">Einführung & Begriffe</button>
+          <div class="accordion-panel">
+            <p>
+              Aktivierende Methoden wie Think-Pair-Share halfen beim Sammeln von Vorwissen. Anschließend erklärten kurze
+              Videoclips die Grundbegriffe Maschinelles Lernen, Trainingsdaten und Bias.
+            </p>
+            <p>
+              <strong>Kompetenzfokus:</strong> Begriffsverständnis, kritische Reflexion über Beispiele aus dem Alltag.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item" data-toggle data-open="false">
+          <button class="accordion-trigger" type="button">Daten verstehen & visualisieren</button>
+          <div class="accordion-panel">
+            <p>
+              In Gruppen wurden Datensets analysiert. Schülerinnen und Schüler verglichen Diagramme, diskutierten
+              Verzerrungen und dokumentierten Ergebnisse in einem digitalen Portfolio.
+            </p>
+            <p>
+              <strong>Kompetenzfokus:</strong> Datenkompetenz, Transfer in reale Entscheidungssituationen.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item" data-toggle data-open="false">
+          <button class="accordion-trigger" type="button">KI praktisch anwenden</button>
+          <div class="accordion-panel">
+            <p>
+              In einem Stationenlernen wurden verschiedene KI-Tools ausprobiert: Bildgenerator, Chatbot, Audioanalyse.
+              Die Schülerinnen und Schüler hielten Chancen und Risiken auf Moderationskarten fest.
+            </p>
+            <p>
+              <strong>Kompetenzfokus:</strong> Kreativität, kritische Toolbewertung, Präsentationskompetenz.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item" data-toggle data-open="false">
+          <button class="accordion-trigger" type="button">Ethik & Verantwortung</button>
+          <div class="accordion-panel">
+            <p>
+              Ein Planspiel zu „KI in der Schule“ konfrontierte die Lernenden mit Rollen wie Schulleitung, Elternbeirat und
+              Entwicklerteam. Argumente wurden über ein digitales Whiteboard gesammelt.
+            </p>
+            <p>
+              <strong>Kompetenzfokus:</strong> Perspektivwechsel, argumentatives Schreiben, gesellschaftliche Einordnung.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Mini-Quiz: Welche Methode passt?</h2>
+      <p class="section-text">
+        Prüfe, ob du die Unterrichtsmethoden den passenden Lernzielen zuordnen kannst. Wähle die richtige Antwort – du
+        erhältst direkt Feedback.
+      </p>
+
+      <div class="quiz" data-quiz data-correct="b">
+        <p class="quiz-question">Welche Methode stärkt besonders die Datenkompetenz der Lernenden?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button" data-option="a">Think-Pair-Share zu KI-Begriffen</button>
+          <button class="quiz-option" type="button" data-option="b">Gruppenarbeit mit Datensets und Diagrammvergleich</button>
+          <button class="quiz-option" type="button" data-option="c">Planspiel zu ethischen Perspektiven</button>
+        </div>
+        <p class="quiz-feedback" role="status" aria-live="polite">&nbsp;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2024 Projekt „KI in der Schule“ – Dokumentation & Lernpfade
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+
+</html>
