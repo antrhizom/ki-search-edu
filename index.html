@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KI-Suchmaschine im Bildungsbereich – Interaktives Lernmodul</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__badge">Interaktives Lernmodul</div>
+      <h1>Die KI-Suchmaschine im Bildungsbereich</h1>
+      <p class="hero__lead">
+        Entdecke, wie intelligente Suchsysteme den Lernalltag verändern, welche
+        Chancen und Risiken sie bergen und wie du sie verantwortungsvoll in
+        Unterricht und Selbststudium einsetzt.
+      </p>
+      <button class="hero__cta" data-scroll-target="#lernreise">
+        Lernreise starten
+      </button>
+    </header>
+
+    <main>
+      <section class="section" id="lernreise">
+        <h2>1. Warum KI-Suchmaschinen wichtig sind</h2>
+        <div class="timeline" role="tablist" aria-label="Lernstationen">
+          <button class="timeline__step timeline__step--active" role="tab" aria-selected="true" aria-controls="station1" id="tab-station1" data-target="station1">
+            💡 Grundlagen
+          </button>
+          <button class="timeline__step" role="tab" aria-selected="false" aria-controls="station2" id="tab-station2" data-target="station2">
+            🚀 Einsatz im Unterricht
+          </button>
+          <button class="timeline__step" role="tab" aria-selected="false" aria-controls="station3" id="tab-station3" data-target="station3">
+            ⚖️ Chancen & Risiken
+          </button>
+          <button class="timeline__step" role="tab" aria-selected="false" aria-controls="station4" id="tab-station4" data-target="station4">
+            🧭 Verantwortung
+          </button>
+        </div>
+        <div class="timeline__panel" id="station1" role="tabpanel" aria-labelledby="tab-station1">
+          <h3>Wie funktioniert eine KI-Suchmaschine?</h3>
+          <ul>
+            <li>Analyse riesiger Datenmengen mit maschinellem Lernen.</li>
+            <li>Verstehen von Kontext und Bedeutung natürlicher Sprache.</li>
+            <li>Personalisierung von Ergebnissen anhand vergangener Suchen.</li>
+          </ul>
+        </div>
+        <div class="timeline__panel timeline__panel--hidden" id="station2" role="tabpanel" aria-labelledby="tab-station2" hidden>
+          <h3>KI als Lernassistent</h3>
+          <p>
+            KI-Suchmaschinen können Inhalte an Lernstände anpassen, Lernfragen
+            beantworten und passende Medien empfehlen. Lehrkräfte gewinnen Zeit
+            für individuelle Betreuung.
+          </p>
+          <div class="highlights">
+            <article>
+              <h4>Adaptive Lernpfade</h4>
+              <p>
+                Lernende erhalten Aufgaben auf Basis ihrer bisherigen
+                Antworten und Interessen.
+              </p>
+            </article>
+            <article>
+              <h4>Multimediale Ressourcen</h4>
+              <p>
+                Ergebnisse kombinieren Text, Video und Simulationen für
+                abwechslungsreiche Lernsettings.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="timeline__panel timeline__panel--hidden" id="station3" role="tabpanel" aria-labelledby="tab-station3" hidden>
+          <h3>Chancen und Risiken abwägen</h3>
+          <p>
+            KI-Suchmaschinen bieten personalisierte Lernunterstützung, können
+            aber auch Voreingenommenheiten verstärken oder Fehlinformationen
+            verbreiten. Kritisches Prüfen bleibt essenziell.
+          </p>
+          <ul>
+            <li><strong>Chancen:</strong> Differenzierter Unterricht, Barrierefreiheit, Motivation.</li>
+            <li><strong>Risiken:</strong> Bias in Trainingsdaten, Datenschutz, mangelnde Transparenz.</li>
+          </ul>
+        </div>
+        <div class="timeline__panel timeline__panel--hidden" id="station4" role="tabpanel" aria-labelledby="tab-station4" hidden>
+          <h3>Verantwortungsvoll nutzen</h3>
+          <p>
+            Schulen sollten Leitlinien festlegen, Lernende sensibilisieren und
+            Feedbackschleifen mit Anbietern etablieren. Dokumentiere, welche
+            Daten gesammelt werden und wie Ergebnisse überprüft werden.
+          </p>
+          <ol>
+            <li>Transparenz schaffen &ndash; erklärbare Empfehlungen.</li>
+            <li>Datenschutz sichern &ndash; Einwilligungen und Minimierung.</li>
+            <li>Kompetenzen fördern &ndash; Informationskompetenz und Ethik.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--accent" id="perspektiven">
+        <h2>2. Perspektiven vergleichen</h2>
+        <div class="perspective-grid">
+          <button class="perspective-card perspective-card--active" data-perspective="lernende">
+            <h3>👩🏽‍🎓 Lernende</h3>
+            <p>Gezielte Unterstützung, kreative Aufgaben, aber auch Gefahr der Überforderung.</p>
+          </button>
+          <button class="perspective-card" data-perspective="lehrkraefte">
+            <h3>👩‍🏫 Lehrkräfte</h3>
+            <p>Unterrichtsvorbereitung mit smarten Vorschlägen und Monitoring-Tools.</p>
+          </button>
+          <button class="perspective-card" data-perspective="schulleitung">
+            <h3>🏫 Schulleitung</h3>
+            <p>Strategische Entscheidungen zu Infrastruktur, Datenschutz und Weiterbildung.</p>
+          </button>
+        </div>
+        <div class="perspective-detail" id="perspektive-detail" aria-live="polite"></div>
+      </section>
+
+      <section class="section" id="werkzeuge">
+        <h2>3. Werkzeugkoffer für den Unterricht</h2>
+        <div class="toolkit">
+          <article class="toolkit__card">
+            <h3>Checkliste Evaluation</h3>
+            <p>
+              Prüfe, ob eine KI-Suchmaschine transparent arbeitet, Lernziele
+              unterstützt und DSGVO-konform ist.
+            </p>
+            <button class="button" data-modal-target="#checkliste-modal">
+              Checkliste anzeigen
+            </button>
+          </article>
+          <article class="toolkit__card">
+            <h3>Unterrichtsidee</h3>
+            <p>
+              Führe eine Recherche-Challenge durch: Teams vergleichen die
+              Ergebnisse von KI-Suchmaschinen und klassischen Tools.
+            </p>
+            <button class="button" data-modal-target="#unterricht-modal">
+              Ablaufplan öffnen
+            </button>
+          </article>
+          <article class="toolkit__card">
+            <h3>Kompetenzraster</h3>
+            <p>
+              Erstelle Lernziele für den kompetenten Umgang mit KI-gestützter
+              Suche in verschiedenen Altersstufen.
+            </p>
+            <button class="button" data-modal-target="#kompetenz-modal">
+              Raster ansehen
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--neutral" id="quiz">
+        <h2>4. Wissen testen</h2>
+        <form class="quiz" aria-live="polite">
+          <fieldset>
+            <legend>1. Welches Kriterium ist <strong>kein</strong> Vorteil von KI-Suchmaschinen?</legend>
+            <label>
+              <input type="radio" name="q1" value="korrekt" />
+              Personalisierte Empfehlungen
+            </label>
+            <label>
+              <input type="radio" name="q1" value="falsch" />
+              Automatische Analyse von Lernständen
+            </label>
+            <label>
+              <input type="radio" name="q1" value="falsch" />
+              Unterstützung bei barrierefreiem Lernen
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>2. Wie kann Bias reduziert werden?</legend>
+            <label>
+              <input type="checkbox" name="q2" value="diverse" />
+              Durch vielfältige Trainingsdaten
+            </label>
+            <label>
+              <input type="checkbox" name="q2" value="feedback" />
+              Durch Feedback-Schleifen mit Nutzenden
+            </label>
+            <label>
+              <input type="checkbox" name="q2" value="geheimhaltung" />
+              Durch Geheimhaltung der Funktionsweise
+            </label>
+          </fieldset>
+          <button type="submit" class="button quiz__submit">Antworten prüfen</button>
+          <p class="quiz__result" role="status"></p>
+        </form>
+      </section>
+
+      <section class="section section--accent" id="reflexion">
+        <h2>5. Reflexion &amp; Transfer</h2>
+        <div class="reflection">
+          <label for="reflexion-eingabe">Notiere, wie du KI-Suchmaschinen künftig im Unterricht einsetzen möchtest:</label>
+          <textarea id="reflexion-eingabe" rows="4" placeholder="Ziele, Vereinbarungen und offene Fragen..." aria-describedby="reflexion-hinweis"></textarea>
+          <p id="reflexion-hinweis" class="reflection__hint">
+            Deine Notizen bleiben lokal im Browser gespeichert und können als Gesprächsgrundlage dienen.
+          </p>
+          <div class="reflection__actions">
+            <button class="button" id="reflexion-speichern">Notiz speichern</button>
+            <button class="button button--secondary" id="reflexion-loeschen">Notiz löschen</button>
+          </div>
+          <div class="reflection__feedback" role="status"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2024 Lernmodul &ldquo;KI-Suchmaschine im Bildungsbereich&rdquo;. Entwickelt zur
+        Förderung digitaler Kompetenzen.
+      </p>
+    </footer>
+
+    <div class="modal" id="checkliste-modal" role="dialog" aria-modal="true" aria-labelledby="checkliste-titel" hidden>
+      <div class="modal__content">
+        <button class="modal__close" data-modal-close>&times;</button>
+        <h2 id="checkliste-titel">Checkliste Evaluation</h2>
+        <ul>
+          <li>Welche Daten sammelt die KI-Suchmaschine?</li>
+          <li>Werden Quellenangaben nachvollziehbar dargestellt?</li>
+          <li>Ist der Zugriff für alle Lernenden barrierefrei möglich?</li>
+          <li>Gibt es Support-Strukturen für Lehrkräfte?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal" id="unterricht-modal" role="dialog" aria-modal="true" aria-labelledby="unterricht-titel" hidden>
+      <div class="modal__content">
+        <button class="modal__close" data-modal-close>&times;</button>
+        <h2 id="unterricht-titel">Unterrichtsidee: Recherche-Challenge</h2>
+        <ol>
+          <li>Teams analysieren eine Unterrichtsfrage mit verschiedenen Tools.</li>
+          <li>Sie dokumentieren Stärken und Schwächen der Ergebnisse.</li>
+          <li>Im Plenum werden Qualitätskriterien für KI-Recherche entwickelt.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="modal" id="kompetenz-modal" role="dialog" aria-modal="true" aria-labelledby="kompetenz-titel" hidden>
+      <div class="modal__content">
+        <button class="modal__close" data-modal-close>&times;</button>
+        <h2 id="kompetenz-titel">Kompetenzraster</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Stufe</th>
+              <th>Schwerpunkte</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basis</td>
+              <td>Verstehen, was KI-Suche ist und wie Quellen geprüft werden.</td>
+            </tr>
+            <tr>
+              <td>Fortgeschritten</td>
+              <td>Bias erkennen, Datenschutzaspekte diskutieren, reflektieren.</td>
+            </tr>
+            <tr>
+              <td>Expert</td>
+              <td>Eigene Suchstrategien entwickeln, Projekte dokumentieren.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="assets/script.js" defer></script>
+  </body>
+</html>
